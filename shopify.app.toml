@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9b85f208909cf275f6fd4c5ff92bdb0d"
+name = "SMS Philippines"
+handle = "sms-philippines-2"
+application_url = "https://sterling-tells-adaptation-estimate.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "metazavana.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://sterling-tells-adaptation-estimate.trycloudflare.com/auth/callback",
+  "https://sterling-tells-adaptation-estimate.trycloudflare.com/auth/shopify/callback",
+  "https://sterling-tells-adaptation-estimate.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
